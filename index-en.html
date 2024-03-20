@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- for internet explorere -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--(the most important line) for mobile first -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <link rel="icon" type="image/png" href="images/favicon.png">
+		<title>Almazrah</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/swiper-bundle.css">
+		<link rel="stylesheet" href="css/all.min.css">
+		<link rel="stylesheet" href="css/linear.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style-en.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>-->
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+        <script src="js/jquery-2.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/swiper-bundle.js"></script>
+		<script src="js/plug.js"></script>
+	</head>
+	<body>
+         <!-- Start preloader -->
+        <div class="pre-loader">
+          <div class="content"><img src="images/logo.png" alt="logo" />
+              <div class="progress-bar"><span class="bar"><span class="progress"></span></span></div>
+          </div>
+        </div>
+         <!-- End preloader -->
+         
+         <!-- Start header -->
+         <header>
+            
+             <div class="top_nav">
+                <div class="over_click"></div>
+                 <div class="container">
+                     <div class="top_bar">
+                         <div class="logo">
+                            <a href="#"><img class="img-responsive" src="images/logo.png" alt="logo"></a>
+                         </div>
+                         
+                         <div class="main_nav">
+                           <span href="#" class="lnr lnr-cross closebtn"></span>
+                           
+                           <div class="st_lang sm">
+                                 <div class="t_lang dropdown">
+                                      <a class="dropdown-toggle tl_anc fixanc" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="la_flag">
+                                            <img class="i_lang" src="images/lang-en.png" alt="language">
+                                        </span> English
+                                        <span class="lnr lnr-chevron-down"></span>
+                                      </a>
+                                      <ul class="dropdown-menu sam_menu ulfix">
+                                       <li>
+                                            <a href="index-en.html" class="fixanc">English</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html" class="fixanc">العربية</a>
+                                        </li>
+                                      </ul>
+                                  </div> 
+                             </div>
+                             
+                            <ul class="nav_bar list-unstyled list-inline ulfix">
+                                <li><a class="fixanc" href="#">Home</a></li>
+                                <li><a class="fixanc" href="#">About Us</a></li>
+                                <li class="dropdown samdrop_li">
+                                    <a class="dropdown-toggle dir_anc fixanc" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Products</a>
+                                    <ul class="dropdown-menu ulfix sam_menu">
+                                        <li>
+                                            <a class="sub fixanc" href="#">Product Name</a>
+                                        </li>
+                                        <li>
+                                            <a class="sub fixanc" href="#">Product Name</a>
+                                        </li>
+                                        <li>
+                                            <a class="sub fixanc" href="#">Product Name </a>
+                                        </li>
+                                        <li>
+                                            <a class="sub fixanc" href="#">Product Name</a>
+                                        </li>
+                                        <li>
+                                            <a class="sub fixanc" href="#">Product Name</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="fixanc" href="#"> Special Offers</a></li>
+                                <li><a class="fixanc" href="#">Contact Us</a></li>
+                            </ul>
+                          </div>
+                          
+                          <div class="side_cont">
+                             <ul class="list-unstyled list-inline ulfix h_recomend">
+                                 <li class="srch">
+                                    <a role="button" class="re_btn fixanc" data-toggle="modal" data-target=".over_mod">
+                                           <span class="lnr lnr-magnifier"></span>
+                                    </a>
+                                 </li>
+                                 <li class="my_account lg dropdown">
+                                     <a class="re_btn dropdown-toggle fixanc" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="lnr lnr-user"></span> 
+                                    </a>
+                                    <ul class="dropdown-menu ulfix sam_menu">
+                                        <li>
+                                            <a href="#" class="fixanc">Log In</a>
+                                        </li>
+                                        <li><a href="#" class="fixanc">Register</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class="cart">
+                                    <a class="re_btn fixanc" href="#">
+                                        <span class="lnr lnr-cart"></span>
+                                    </a>
+                                 </li>
+                                 <li class="mob_navbtn">
+                                    <a id="navbtn" class="re_btn fixanc">
+                                        <span class="lnr lnr-menu"></span>
+                                    </a>
+                                </li>
+                             </ul>
+                             <div class="st_lang lg">
+                                 <div class="t_lang dropdown">
+                                      <a class="dropdown-toggle tl_anc fixanc" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="la_flag">
+                                            <img class="i_lang" src="images/lang-en.png" alt="language">
+                                        </span> English
+                                        <span class="lnr lnr-chevron-down"></span>
+                                      </a>
+                                      <ul class="dropdown-menu sam_menu ulfix">
+                                       <li>
+                                            <a href="index-en.html" class="fixanc">English</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html" class="fixanc">العربية</a>
+                                        </li>
+                                      </ul>
+                                  </div> 
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        
+        
+             <!--------------- start search modal ---------------->
+            <div class="modal fade over_mod" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="lnr lnr-cross"></span>
+                </button>
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="search_cont sm">
+                             <div class="search_box">
+                                <input class="searchinput" id="search" placeholder=" Search ..." type="search">
+                                <span class="changed"></span>
+                                <button class="search_icon"type="submit"><span class="lnr lnr-magnifier"></span></button>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <!--------------- end search modal ---------------->
+            
+           <!-- Start Main Slider -->
+          <div class="main_slider_sec">
+                <div class="main_slider pag_slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="#" class="main-slide">
+                              <img src="images/slider.jpg" class="img-responsive">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#" class="main-slide">
+                              <img src="images/slider.jpg" class="img-responsive">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#" class="main-slide">
+                              <img src="images/slider.jpg" class="img-responsive">
+                            </a>
+                          </div>
+                        </div>
+                  </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+          </div>
+          <!-- end Main Slider -->
+          </header>
+         <!-- end header -->
+          
+          <!-- start banners -->
+          <div class="banners">
+              <div class="container">
+                  <div class="bans_row">
+                      <div class="bans">
+                          <a href="#" class="bans_img">
+                              <img src="images/c1.jpg" class="img-responsive" />
+                          </a>
+                      </div>
+                      <div class="bans">
+                          <a href="#" class="bans_img">
+                              <img src="images/c2.jpg" class="img-responsive" />
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- end banners -->
+          
+          
+          
+          <!-- start new arrivals -->
+          <div class="new_arrivals">
+              <div class="container">
+                  <h3 class="hhfix head_title">New Arrivals</h3>
+                  <div class="products_row">
+                      <div class="prod_cont">
+                            <div class="pr_img">
+                                <a href="#">
+                                    <img src="images/p1.jpg" alt="product" class="img-responsive" />
+                                </a>
+                            </div>
+                            <ul class="pr_desc ulfix list-unstyled">
+                                <li class="pr_name">
+                                    <a href="#" class="fixanc">Product Name</a>
+                                </li>
+                                <li class="pr_price">
+                                    <span class="prev">14.75 SAR</span>
+                                    <span class="cur">12.00 SAR</span>
+                                </li>
+                                <li class="add_cart">
+                                    <a role="button" type="button" class="add_act fixanc">Add to cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prod_cont">
+                            <div class="pr_img">
+                                <a href="#">
+                                    <img src="images/p2.jpg" alt="product" class="img-responsive" />
+                                </a>
+                            </div>
+                            <ul class="pr_desc ulfix list-unstyled">
+                                <li class="pr_name">
+                                    <a href="#" class="fixanc">Product Name</a>
+                                </li>
+                                <li class="pr_price">
+                                    <span class="cur">12.00 SAR</span>
+                                </li>
+                                <li class="add_cart">
+                                    <a role="button" type="button" class="add_act fixanc">Add to cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prod_cont">
+                            <div class="pr_img">
+                                <a href="#">
+                                    <img src="images/p3.jpg" alt="product" class="img-responsive" />
+                                </a>
+                            </div>
+                            <ul class="pr_desc ulfix list-unstyled">
+                                <li class="pr_name">
+                                    <a href="#" class="fixanc">Product Name</a>
+                                </li>
+                                <li class="pr_price">
+                                    <span class="prev">14.75 SAR</span>
+                                    <span class="cur">12.00 SAR</span>
+                                </li>
+                                <li class="add_cart">
+                                    <a role="button" type="button" class="add_act fixanc">Add to cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prod_cont">
+                            <div class="pr_img">
+                                <a href="#">
+                                    <img src="images/p4.jpg" alt="product" class="img-responsive" />
+                                </a>
+                            </div>
+                            <ul class="pr_desc ulfix list-unstyled">
+                                <li class="pr_name">
+                                    <a href="#" class="fixanc">Product Name</a>
+                                </li>
+                                <li class="pr_price">
+                       
+                                    <span class="cur">12.00 SAR</span>
+                                </li>
+                                <li class="add_cart">
+                                    <a role="button" type="button" class="add_act fixanc">Add to cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prod_cont">
+                            <div class="pr_img">
+                                <a href="#">
+                                    <img src="images/p5.jpg" alt="product" class="img-responsive" />
+                                </a>
+                            </div>
+                            <ul class="pr_desc ulfix list-unstyled">
+                                <li class="pr_name">
+                                    <a href="#" class="fixanc">Product Name</a>
+                                </li>
+                                <li class="pr_price">
+                                    <span class="prev">14.75 SAR</span>
+                                    <span class="cur">12.00 SAR</span>
+                                </li>
+                                <li class="add_cart">
+                                    <a role="button" type="button" class="add_act fixanc">Add to cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prod_cont">
+                            <div class="pr_img">
+                                <a href="#">
+                                    <img src="images/p6.jpg" alt="product" class="img-responsive" />
+                                </a>
+                            </div>
+                            <ul class="pr_desc ulfix list-unstyled">
+                                <li class="pr_name">
+                                    <a href="#" class="fixanc">Product Name</a>
+                                </li>
+                                <li class="pr_price">
+                        
+                                    <span class="cur">12.00 SAR</span>
+                                </li>
+                                <li class="add_cart">
+                                    <a role="button" type="button" class="add_act fixanc">Add to cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prod_cont">
+                            <div class="pr_img">
+                                <a href="#">
+                                    <img src="images/p7.jpg" alt="product" class="img-responsive" />
+                                </a>
+                            </div>
+                            <ul class="pr_desc ulfix list-unstyled">
+                                <li class="pr_name">
+                                    <a href="#" class="fixanc">Product Name</a>
+                                </li>
+                                <li class="pr_price">
+                                    <span class="prev">14.75 SAR</span>
+                                    <span class="cur">12.00 SAR</span>
+                                </li>
+                                <li class="add_cart">
+                                    <a role="button" type="button" class="add_act fixanc">Add to cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prod_cont">
+                            <div class="pr_img">
+                                <a href="#">
+                                    <img src="images/p8.jpg" alt="product" class="img-responsive" />
+                                </a>
+                            </div>
+                            <ul class="pr_desc ulfix list-unstyled">
+                                <li class="pr_name">
+                                    <a href="#" class="fixanc">Product Name</a>
+                                </li>
+                                <li class="pr_price">
+                               
+                                    <span class="cur">12.00 SAR</span>
+                                </li>
+                                <li class="add_cart">
+                                    <a role="button" type="button" class="add_act fixanc">Add to cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                  </div>
+                  <div class="order_now">
+                      <a href="#" class="fixanc">Order Now</a>
+                  </div>
+              </div>
+          </div>
+          
+          
+          <!-- end new arrivals -->
+          
+          
+          <!-- start banners -->
+          <div class="banners">
+              <div class="container">
+                  <div class="bans_row2">
+                      <div class="bans small">
+                          <a href="#" class="bans_img">
+                              <img src="images/ban1.jpg" class="img-responsive" />
+                          </a>
+                      </div>
+                      <div class="bans big">
+                          <a href="#" class="bans_img">
+                              <img src="images/ban2.jpg" class="img-responsive" />
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- end banners -->
+          
+          
+          <!-- start best_seller -->
+          <div class="best_seller">
+              <div class="container">
+                  <h3 class="hhfix head_title">Bestseller</h3>
+                  <div class="products_slider pag_slider">
+                     <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="prod_cont">
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p1.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                    </div>
+                                    <ul class="pr_desc ulfix list-unstyled">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">Product Name</a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">14.75 SAR</span>
+                                            <span class="cur">12.00 SAR</span>
+                                        </li>
+                                        <li class="add_cart">
+                                            <a role="button" type="button" class="add_act fixanc">Add to cart</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="prod_cont">
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p2.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                    </div>
+                                    <ul class="pr_desc ulfix list-unstyled">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">Product Name</a>
+                                        </li>
+                                        <li class="pr_price">
+                                            
+                                            <span class="cur">12.00 SAR</span>
+                                        </li>
+                                        <li class="add_cart">
+                                            <a role="button" type="button" class="add_act fixanc">Add to cart</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="prod_cont">
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p3.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                    </div>
+                                    <ul class="pr_desc ulfix list-unstyled">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">Product Name</a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">14.75 SAR</span>
+                                            <span class="cur">12.00 SAR</span>
+                                        </li>
+                                        <li class="add_cart">
+                                            <a role="button" type="button" class="add_act fixanc">Add to cart</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="prod_cont">
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p4.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                    </div>
+                                    <ul class="pr_desc ulfix list-unstyled">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">Product Name</a>
+                                        </li>
+                                        <li class="pr_price">
+                                            
+                                            <span class="cur">12.00 SAR</span>
+                                        </li>
+                                        <li class="add_cart">
+                                            <a role="button" type="button" class="add_act fixanc">Add to cart</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="prod_cont">
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p5.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                    </div>
+                                    <ul class="pr_desc ulfix list-unstyled">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">Product Name</a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">14.75 SAR</span>
+                                            <span class="cur">12.00 SAR</span>
+                                        </li>
+                                        <li class="add_cart">
+                                            <a role="button" type="button" class="add_act fixanc">Add to cart</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                  </div>
+              </div>
+          </div>
+        <!-- end best_seller -->
+        
+        
+        <!-- start features -->
+                <!-- start futures -->
+        <div class="our_features">
+            <div class="container">
+                <div class="feats_row feats_slider pag_slider">
+                   <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="feat_cont">
+                                    <div class="fe_icon"><i class="fas fa-star"></i></div>
+                                    <div class="feat_disc">
+                                        <h3 class="mafe_tit hhfix">SPECIAL PRODUCTS</h3>
+                                        <h5 class="sbfe_tit hhfix">Original 100%</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="feat_cont">
+                                    <div class="fe_icon"><i class="fas fa-shield-alt"></i></div>
+                                    <div class="feat_disc">
+                                        <h3 class="mafe_tit hhfix">PAYMENT METHOD</h3>
+                                        <h5 class="sbfe_tit hhfix">Safe 100%</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="feat_cont">
+                                    <div class="fe_icon"><i class="fas fa-headset"></i></div>
+                                    <div class="feat_disc">
+                                        <h3 class="mafe_tit hhfix">CUSTOMER SERVICE</h3>
+                                        <h5 class="sbfe_tit hhfix">Special 24/7</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="feat_cont">
+                                    <div class="fe_icon"><i class="fas fa-archive"></i></div>
+                                    <div class="feat_disc">
+                                        <h3 class="mafe_tit hhfix">FREE SHIPPING</h3>
+                                        <h5 class="sbfe_tit hhfix">For more than 299 SAR</h5>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- end features -->
+        
+        
+        
+        <!-- start footer -->
+        <footer>
+            <!-- start newsletter -->
+            <div class="container">
+                <div class="our_newsletter">
+                    <div class="newsl_cont">
+                        <h3 class="hhfix newsl_title">Subscribe to <span class="spot">Newsletter</span> to receive new offers</h3>
+                        <div class="form-group mail_cont">
+                            <input type="email" class="form-control ffmail_input" id="exampleInputEmail1" placeholder=" Enter E-Mail ">
+                            <button class="fm_check"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                 <!-- end newsletter -->
+                
+                <div class="foot_cont">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="foo_desc">
+                                <div class="logo">
+                                    <a href="#"><img class="img-responsive" src="images/logo.png" alt="logo"></a>
+                                </div>
+                                <ul class="foo_social list-unstyled list-inline ulfix">
+                                    <li><a href="#" class="fixanc"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="#" class="fixanc"><i class="fab fa-snapchat-ghost"></i></a></li>
+                                    <li><a href="#" class="fixanc"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#" class="fixanc"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#" class="fixanc"><i class="fab fa-facebook-f"></i></a></li>
+                               </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="fast_links">
+                                <h5 class="ff_title fsm_title hhfix" data-toggle="collapse" data-target="#id10" aria-expanded="false">Information</h5>
+                                <ul class="list-unstyled collapse ulfix fast_ul" id="id10">
+                                    <li><a class="fixanc" href="#">About Us </a></li>
+                                    <li><a class="fixanc" href="#">Delivery Information</a></li>
+                                    <li><a class="fixanc" href="#">Bank Accounts</a></li>
+                                    <li><a class="fixanc" href="#">Privacy Policy</a></li>
+                                    <li><a class="fixanc" href="#">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="fast_links">
+                                <h5 class="ff_title fsm_title hhfix" data-toggle="collapse" data-target="#id12" aria-expanded="false">Customer Service</h5>
+                                <ul class="list-unstyled collapse ulfix fast_ul" id="id12">
+                                    <li><a class="fixanc" href="#">Contact Us</a></li>
+                                    <li><a class="fixanc" href="#">Returns</a></li>
+                                    <li><a class="fixanc" href="#">Site Map</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="fast_links">
+                                <h5 class="ff_title fsm_title hhfix" data-toggle="collapse" data-target="#id9" aria-expanded="false">My Account</h5>
+                                <ul class="list-unstyled collapse ulfix" id="id9">
+                                    <li><a class="fixanc" href="#">My Account</a></li>
+                                    <li><a class="fixanc" href="#">Order History</a></li>
+                                    <li><a class="fixanc" href="#">Wish List</a></li>
+                                    <li><a class="fixanc" href="#">Newsletter</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="fast_links">
+                                <h5 class="ff_title fsm_title hhfix" data-toggle="collapse" data-target="#id11" aria-expanded="false">Extras</h5>
+                                <ul class="list-unstyled collapse ulfix" id="id11">
+                                    <li><a class="fixanc" href="#">Brands</a></li>
+                                    <li><a class="fixanc" href="#">Gift Certificates</a></li>
+                                    <li><a class="fixanc" href="#">Affiliate</a></li>
+                                    <li><a class="fixanc" href="#">Specials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fopayco">
+                       <div class="ff_pay">
+                            <img src="images/pay.png" class="img-responsive">
+                        </div>
+                        <div class="ff_rghts">
+                                 <p class="hhfix p_right">© All rights reserved to Farm Chicken </p>
+                                 <p class="hhfix p_right_1"> Desighned & Developed <a href="#"><img src="images/tasawk-c-en.png"></a> </p>
+                        </div>
+
+                    </div>
+            </div>
+           
+        </footer>
+        <!-- end footer -->
+        
+    </body>
+</html>
